@@ -98,5 +98,5 @@ class Worker {
 let worker1 = new Worker ("Ivan Petrenko", 45, 15);
  console.log(worker1.fullName, "Salary: " + worker1.showSalary(), ", Salary with experience: " + worker1.showSalaryWithExperience());
  worker1.setExp = 1.5;
- console.log ("salary with new experience: " + worker1.showExp);
+ console.log ("salary with new experience: " + worker1.showSalaryWithBigExperience());
  worker1.showSalaryWithBigExperience();
