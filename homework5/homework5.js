@@ -70,11 +70,11 @@
 // task -4-
 
 class Worker {
+    _experience = 1.2;
     constructor (fullName, dayRate, workingDays) {
         this.fullName = fullName;
         this.dayRate = dayRate;
         this.workingDays = workingDays;
-        this._experience = 1.2;
     }
 
     showSalary() {
@@ -82,10 +82,21 @@ class Worker {
     }
     
     showSalaryWithExperience(_experience) {
-    //  this._experience = 1.2;
     return this.showSalary() * this._experience;
 }
+    showSalaryWithBigExperience() {
+        return this.dayRate * this.workingDays * this._experience;
+    }
+    get showExp() {
+        return this._experience;
+    }
+    set setExp(experience) {
+        this._experience = experience;
+    }
 }
 
 let worker1 = new Worker ("Ivan Petrenko", 45, 15);
- console.log("Salary: " + worker1.showSalary(), ", Salary with experience: " + worker1.showSalaryWithExperience());
+ console.log(worker1.fullName, "Salary: " + worker1.showSalary(), ", Salary with experience: " + worker1.showSalaryWithExperience());
+ worker1.setExp = 1.5;
+ console.log ("salary with new experience: " + worker1.showExp);
+ worker1.showSalaryWithBigExperience();
