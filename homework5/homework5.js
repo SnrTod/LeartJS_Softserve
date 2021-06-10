@@ -99,4 +99,20 @@ let worker1 = new Worker ("Ivan Petrenko", 45, 15);
  console.log(worker1.fullName, "Salary: " + worker1.showSalary(), ", Salary with experience: " + worker1.showSalaryWithExperience());
  worker1.setExp = 1.5;
  console.log ("salary with new experience: " + worker1.showSalaryWithBigExperience());
- worker1.showSalaryWithBigExperience();
+
+ console.log("----------------");
+
+ let worker2 = new Worker ("Ilan Sakovska", 150, 15);
+ console.log(worker2.fullName, "Salary: " + worker2.showSalary(), ", Salary with experience: " + worker2.showSalaryWithExperience());
+ worker2.setExp = 1.5;
+ console.log ("salary with new experience: " + worker2.showSalaryWithBigExperience());
+
+ console.log("----------------");
+
+
+ let worker3 = new Worker ("Vova Naz", 110, 20);
+ console.log(worker3.fullName, "Salary: " + worker3.showSalary(), ", Salary with experience: " + worker3.showSalaryWithExperience());
+ worker3.setExp = 1.5;
+ console.log ("salary with new experience: " + worker3.showSalaryWithBigExperience());
+ 
+ console.log("----------------");
